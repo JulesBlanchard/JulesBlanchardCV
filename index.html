@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web\css\fontawesome.css">
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web\css\solid.css">
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web\css\brands.css">
+        <link rel="stylesheet" href="fontawesome-free-6.4.2-web\css\regular.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        
+        <!-------------->
+        <!--  Header  -->
+        <!-------------->
+        <nav class="navvbar">
+            <div class="navvbar-container">
+                <div class="logo">
+                    <h2 class="name">julesBlanchard<span class="chevrons">()</span><span class="slash">:</span></h2>
+                </div>
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <ul class="menu-items">
+                    <li><a href="#home" class="home-link">Home</a></li>
+                    <li><a href="#about" class="about-link">About</a></li>
+                    <li><a href="#skills" class="skills-link">Skills</a></li>
+                    <li><a href="#education" class="education-link">Education</a></li>
+                    <li><a href="#work" class="work-link">Work</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+        <!----------------------------------------------->
+        <!--  Section home : première page qu'on voit  -->
+        <!----------------------------------------------->
+        <section class="home" id="home">
+            <!-- particles.js container -->
+            <div id="particles-js"></div>
+
+            <div class="content">
+                <h3>Hi There,<br/> I'm Jules <span>Blanchard</span></h3>
+                <p>i am into <span class="multiText"></span></p>
+
+
+                <!-- Nouvelle section pour le bouton et les icônes de réseaux sociaux -->
+                <div class="glowing-kbutton-wrap">
+                    <a href="#about"><button href="#about" class="glowing-button2">About me</button></a>
+                </div>
+                <div class="socials">
+                    <ul class="social-icons">
+                        <li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/jules-blanchard" target="_blank"><i class="fa-brands fa-linkedin fa-flip"></i></i></a></li> 
+                        <li><a class="resume" href="/assets/JulesBlanchardCV.pdf" download aria-label="Resume"  target="_blank"><i class="fa-solid fa-file-arrow-down fa-bounce"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- photo de moi à droite-->
+            <div class="image">
+                <img draggable="false" class="tilt" src="./assets/images/profile-pic.png" alt="">
+            </div>
+        </section>
+        <!---------------------------->
+        <!--  Fin de première page  -->
+        <!---------------------------->
+
+
+        <!----------------------------->
+        <!--  Début section about me -->
+        <!----------------------------->
+        <section class="about" id="about">
+            <div class="about-title"><h3><i class="fa-solid fa-user fa-bounce" style="color: #ffffff;"></i>  About <span>me</span></h3></div>
+            <div class="terminal-container">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="button close-btn"></div>
+                            <div class="button minimize-btn"></div>
+                            <div class="button expand-btn"></div>
+                        </div>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="enViolet">julesBlanchard  $</span> cat aboutJules</p><br><br>
+                        <p><span class="enViolet">aboutJules</span><span class="enVert"> (main)  </span><span class="enViolet">$</span></p><br>
+                        <p>Hello ! I'm Jules, a computer science student in my 2nd year at "BUT informatique". I'm looking for a work-study position in development for my 3rd year. I work in application, software and website development, as well as in data science. </p><br>
+                        <p><span class="enViolet">Age : </span> 19</p>
+                        <p><span class="enViolet">Phone : </span> +33 6 71 57 12 21</p>
+                        <p><span class="enViolet">Mail : </span> jules.blanchard2209@gmail.com</p>
+                        <p><span class="enViolet">Place : </span>Toulouse, France</p>
+
+
+                    </div>
+                </div>
+    
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <div class="button close-btn"></div>
+                            <div class="button minimize-btn"></div>
+                            <div class="button expand-btn"></div>
+                        </div>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="enViolet">julesBlanchard  $</span> cd hobbies/interests</p><br><br>
+                        <p><span class="enViolet">hobbies/interests</span><span class="enVert"> (main)  </span><span class="enViolet">$</span> ls</p>
+                        <div class="hobbies">
+                            <!-- liste de tous les hobbies -->
+                            <div class="line-hobbies">
+                                <img src="assets/images/Math_2.png" alt="">
+                                <span>Matematics</span>
+                            </div>
+
+                            <div class="line-hobbies">
+                                <img src="assets/images/datascience.png"  alt="">
+                                <span>Data Science</span>
+                            </div>
+                            
+                            <div class="line-hobbies">
+                                <img src="assets/images/chess.png" alt="">
+                                <span>Chess</span>
+                            </div>
+
+                            <div class="line-hobbies">
+                                <img src="assets/images/netflix.png" alt="">
+                                <span>Shows / Movies</span>
+                            </div>
+
+                            <div class="line-hobbies">
+                                <img src="assets/images/football.png" alt="">
+                                <span>Football</span>
+                            </div>
+
+                            <div class="line-hobbies">
+                                <img src="assets/images/book.png"  alt="">
+                                <span>Reading</span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!----------------------------->
+        <!--  Fin section about me   -->
+        <!----------------------------->
+
+
+        <!----------------------------->
+        <!--  Début section skills   -->
+        <!----------------------------->
+        <section class="skills" id="skills">
+            <div class="skills-title"><h3><i class="fa-solid fa-user fa-bounce" style="color: #ffffff;"></i><span>  Skills</span></h3></div>
+            <div class="conteneurImages">
+                <div class="skill"><img src="assets/skills/python.png" alt=""><span>Python</span></div>
+                <div class="skill"><img src="assets/skills/java.png"  alt=""><span>Java</span></div>
+                <div class="skill"><img src="assets/skills/html.png" alt=""><span>HTML</span></div>
+                <div class="skill"><img src="assets/skills/css.png" alt=""><span>CSS</span></div>
+                <div class="skill"><img src="assets/skills/javascript.png" alt=""><span>Javascript</span></div>
+                <div class="skill"><img src="assets/skills/php.png"  alt=""><span>PHP</span></div>
+                <div class="skill"><img src="assets/skills/bootstrap.png"  alt=""><span>Bootstrap</span></div>
+                <div class="skill"><img src="assets/skills/sql.png"  alt=""><span>SQL/NoSql</span></div>
+                <div class="skill"><img src="assets/skills/mysql.png"  alt=""><span>MySql</span></div>
+                <div class="skill"><img src="assets/skills/grafana.png"  alt=""><span>Grafana</span></div>
+                <div class="skill"><img src="assets/skills/neo4j.png"  alt=""><span>Neo4j</span></div>
+                <div class="skill"><img src="assets/skills/R.png"  alt=""><span>R</span></div>
+                <div class="skill"><img src="assets/skills/VBA.png"  alt=""><span>VBA</span></div>
+                <div class="skill"><img src="assets/skills/eclipse.png"  alt=""><span>Eclipse (IDE)</span></div>
+                <div class="skill"><img src="assets/skills/excel.png"  alt=""><span>Excel</span></div>
+                <div class="skill"><img src="assets/skills/git.png"  alt=""><span>Git</span></div>
+                <div class="skill"><img src="assets/skills/github.png"  alt=""><span>Github</span></div>
+                <div class="skill"><img src="assets/skills/APIrest.png"  alt=""><span>API REST</span></div>
+                <div class="skill"><img src="assets/skills/jquery.png"  alt=""><span>JQuery</span></div>
+                <div class="skill"><img src="assets/skills/office.png"  alt=""><span>Office 365</span></div>
+                <div class="skill"><img src="assets/skills/vscode.png"  alt=""><span>Visual Studio Code</span></div>
+            </div>
+        </section>
+        <!--------------------------->
+        <!--  Fin section skills   -->
+        <!--------------------------->
+
+
+        <!-------------------------------->
+        <!--  Début section education   -->
+        <!-------------------------------->
+        <section class="education" id="education">
+            <div class="education-title"><h3><i class="fa-solid fa-user fa-bounce" style="color: #ffffff;"></i><span>  Education</span></h3></div>
+
+            <div class="slider">
+                <div class="card">
+                    <span>Rodez IUT</span>
+                    <a href="https://www.iut-rodez.fr/fr" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <div class="iutRodez">
+                        <img src="assets/images/iutRodez.jfif" alt="" >
+                        <span>I've been studying computer science at the iut in rodez for 2 years now. Once I've obtained my BUT Informatique diploma, I'd like to do the MIAGE IDA (data engineering) course.
+                            <br><i>Period: 2021 - 2024</i> </span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--------------------------->
+        <!--  Fin section education   -->
+        <!---------------------------> 
+        
+        
+        <script src="js/particles.js"></script>
+        <script src="js/app.js"></script>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+
+        <!-- Effet multi text sur la première page -->
+        <script>
+            var typingEffect = new Typed(".multiText", {
+                strings : ["Computer Science studies", "App Development","Software Development", "Data science"], 
+                loop : true, 
+                typeSpeed : 50, 
+                backSpeed : 50, 
+                startDelay : 900, 
+                backDelay : 1500, 
+            })
+        </script>
+        <script src="https://kit.fontawesome.com/b62f93908e.js" crossorigin="anonymous"></script>
+    </body>
+</html>

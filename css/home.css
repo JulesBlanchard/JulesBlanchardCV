@@ -1,0 +1,681 @@
+/* -------------------- */
+/* Début Section home   */
+/* -------------------- */
+/* colorier lien dans la navbar pour la page active */
+/* .home-link {
+    color: #ff0000!important;
+    text-decoration: underline!important;
+    text-decoration-color: #ff0000!important;
+} */
+
+
+/* début home section */
+.home {
+    display: flex;
+    background-color: #06002A;
+    gap: 1.5rem;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10vh;
+    
+}
+
+/* mettre particules sur toute la première page */
+.home #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* glassmorphisme carte */
+.home .content {
+    display: flex;
+    flex-direction: column;
+    padding : 2rem 3rem 2rem 3rem; 
+    align-items: left;
+    justify-content: space-between;
+    gap : 2rem; 
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.home .content:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.508);
+
+}
+.home .image {
+    border-radius: 50%;
+    z-index: 1;
+}
+.home .image img {
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    width : 30rem;
+    filter : grayscale(100%)
+}
+.home .image img:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+    filter : grayscale(0%)
+
+}
+.home .content h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+.home .content h3 span {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ff0000;
+}
+.home .content p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+.home .content p span {
+    font-size: 1.5rem;
+    color: #FFE500;
+    font-weight: 600;
+}
+
+/* social icons start */
+.socials {
+    padding-left: 1rem;
+    position: relative;
+    margin-top: 2rem;
+}
+.socials .social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.socials .social-icons li {
+    display: inline-block;
+    margin-bottom: 14px;
+}
+.social-icons a {
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 44px;
+    color: #ffffff;
+    background-color: #09011b;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #0685da;
+}
+.social-icons a.linkedin:hover {
+    background: linear-gradient(-45deg, #00c3ff,#0084ff, #021b79);
+    background-size: 400% 400%;
+	animation: gradient 2s ease infinite;
+}
+
+.social-icons a.instagram:hover {
+    background: linear-gradient(-45deg, #3051f1, #c92bb7, #f73344, #fa8e37,#fcdf8f);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.social-icons a.resume:hover {
+    background : linear-gradient(-45deg,  #00c9ff, #92fe9d);
+    background-size: 400% 400%;
+	animation: gradient 2s ease infinite;
+}
+/* social icons end */
+
+/* Home media queries */
+@media (max-width: 768px){
+    .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: space-around;
+        min-height: 110vh;
+
+    }
+
+    .home .image img {
+        width : 10rem!important; 
+    }
+
+    .home .content {
+        display: flex;
+        flex-direction: column;
+        padding : 1rem 1.2rem 1rem 1.2rem!important; 
+        align-items: left;
+        justify-content: space-between;
+        gap : 1rem!important; 
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.24);
+        border-radius: 16px;
+        backdrop-filter: blur(5.4px);
+        -webkit-backdrop-filter: blur(5.4px);
+        border: 1px solid rgba(255, 255, 255, 0.26);
+    }
+
+    .home .content h3 {
+        font-size: 1.8rem!important;
+        font-weight: 800;
+        color: #ffffff;
+    }
+    .home .content h3 span {
+        font-size: 1.8rem!important;
+        font-weight: 800;
+        color: #ff0000;
+    }
+    .home .content p {
+        font-size: 1.3rem!important;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 1rem 0;
+    }
+
+    .home .content p span {
+        font-size: 1.3rem!important;
+        color: #FFE500;
+        font-weight: 600;
+    }
+
+    .glowing-button-wrap {
+        transform: translate(-50%, -50%);
+        max-width: 5rem!important;
+    }
+    
+    /* glowing button 2 */
+    .glowing-button2 {
+        padding: 20px 40px!important;
+    }
+
+}
+/* home media queries ends*/
+
+/* Particles.js */    
+canvas{
+    display:block;
+  }
+  
+.glowing-button-wrap {
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+}
+
+
+/* glowing button 2 */
+.glowing-button2 {
+    margin: 10px;
+    position: relative;
+    box-shadow: 0 0 20px 0 #ffffff;
+    border: 2px solid #ff0000;
+    padding: 20px 80px;
+    background-color: #06002a;
+    transition: .4s;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ff0000;
+    z-index: 0;
+    border-radius: 13px;
+
+}
+
+.glowing-button2::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff0000;
+    transition: .4s;
+    box-shadow: 0 0 20px 0 #ff0000;
+    z-index: -1;
+    width: 30px;
+    height: 10px;
+    top: -5px;
+    left: -5px;
+    transform: skewX(30deg);
+    background-color: #06002a;
+    border-radius: 10px;
+
+}
+
+.glowing-button2::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #ff0000;
+    transition: .4s;
+    box-shadow: 0 0 20px 0 #ff0000;
+    z-index: -1;
+    width: 30px;
+    height: 10px;
+    bottom: -5px;
+    right: -5px;
+    transform: skewX(-30deg);
+    background-color: #06002a;
+    border-radius: 10px;
+
+}
+
+.glowing-button2:hover {
+    color: #06002a;
+}
+
+.glowing-button2:hover::before {
+    width: 100%;
+    height: calc(50% + 1px);
+    left: 0;
+    top: 0;
+    transform: skewX(0deg);
+    background-color: #ff0000;
+    border-radius: 10px 10px 0 0;
+}
+
+.glowing-button2:hover::after {
+    width: 100%;
+    height: calc(50% + 1px);
+    right: 0;
+    bottom: 0;
+    background-color: #ff0000;
+    transform: skewX(0deg);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.multiText {
+    font-weight: 800; 
+    color : yellow; 
+}
+
+/* -------------------- */
+/*  Fin Section home    */
+/* -------------------- */
+
+
+
+/* -------------------- */
+/* Début Section about  */
+/* -------------------- */
+.about {
+    display: flex;
+    flex-direction: column;
+    gap : 2rem; 
+    width: 100vw;
+    background-color: #06002A;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+#about{
+    margin-top: -100px; /* La taille de votre barre de navigation */
+    padding-top: 100px; /* La même taille que la marge supérieure négative */
+}
+/* Nouveau style pour le conteneur de terminaux */
+.about .terminal-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.about .about-title {
+    display: flex;
+    width : 100vw; 
+    align-items: center;
+    justify-content: center;
+}
+
+.about h3 span {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ff0000;
+}
+
+.about h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.terminal {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw; /* mettre ça à 60 quand on passe sur téléphone */
+    gap : 1rem; 
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px; /* Bordures légèrement arrondies */
+    font-size: 1.5rem;
+}
+
+.terminal:hover {
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.508);
+    transform: scale(1.01);
+
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #505050; /* Header gris */
+    padding: 10px;
+    border-top-left-radius: 10px; /* Bordures légèrement arrondies */
+    border-top-right-radius: 10px; /* Bordures légèrement arrondies */
+}
+
+.terminal-body {
+    margin-top: 20px;
+    padding: 0 1rem .5rem 1rem;
+}
+
+
+.terminal-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.terminal-buttons .button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.close-btn {
+    background-color: #ff5f56;
+}
+
+.minimize-btn {
+    background-color: #ffbd2e;
+}
+
+.expand-btn {
+    background-color: #27c93f;
+}
+
+.enViolet {
+    color : #C071FF;
+}
+
+.enVert {
+    color : #00AE1C; 
+}
+
+
+/* terminal pour les hobbies */
+.hobbies {
+    display : flex; 
+    flex-direction: column;
+    gap : 1rem; 
+}
+
+.hobbies img {
+    width : 1.8rem; 
+    height: 2rem; 
+    object-fit: contain;
+    
+}
+
+.line-hobbies {
+    display: flex;
+    align-items: center;
+    gap : 1rem; 
+}  
+
+
+/* about media queries */
+@media (max-width: 768px){
+
+    .terminal {
+        max-width: 80vw; /* mettre ça à 60 quand on passe sur téléphone */
+        gap : 1rem; 
+        font-size: 1.2rem;
+    }
+
+    .about .terminal-container {
+        flex-direction: column;
+    }
+
+    
+}
+
+
+/* -------------------- */
+/* Début Section Skills */
+/* -------------------- */
+.skills h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap : 2rem; 
+    width: 100vw;
+    background-color: #06002A;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.skills .skills-title {
+    display: flex;
+    width : 100vw; 
+    align-items: center;
+    justify-content: center;
+}
+
+.skills h3 span {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ff0000;
+}
+
+
+.conteneurImages {
+    position: relative;
+    width: 100vw; /* Prend toute la largeur de la page */
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+    background-color: #06002A;
+    flex-wrap: wrap;
+    gap : 3rem; 
+  }
+
+.conteneurImages img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: contain;
+    border : 1px rgba(255, 255, 255, 0.5) solid; 
+    border-radius: 10px;
+    padding: 10px;
+    filter: grayscale(80%);
+    transition: filter 0.3s ease; /* Pour une transition en douceur */
+}
+
+.conteneurImages .skill:hover img {
+    filter: grayscale(0%);  /* Restaure les couleurs de l'image */
+}
+
+.conteneurImages .skill {
+    display: flex;
+    flex-direction: column;
+    border-radius:20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding : 2rem; 
+    gap : 2rem; 
+    align-items: center;
+    height: fit-content;
+
+    background: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(5.4px);
+}
+
+.conteneurImages .skill:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.508);
+
+}
+
+/* skills media queries */
+@media (max-width: 768px){
+
+    .conteneurImages img {
+        height: 4.8rem;
+        width: 4.8rem;
+    
+    }
+
+    .conteneurImages .skill {  
+        padding : 1.2rem; 
+        gap : 1rem; 
+    }
+
+   
+}
+#skills{
+    margin-top: -100px; /* La taille de votre barre de navigation */
+    padding-top: 100px; /* La même taille que la marge supérieure négative */
+}
+/* ------------------ */
+/* Fin Section Skills */
+/* ------------------ */
+
+
+
+/* ----------------------- */
+/* Début Section Education */
+/* ----------------------- */
+.education h3 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+.education {
+    display: flex;
+    flex-direction: column;
+    gap : 2rem; 
+    width: 100vw;
+    background-color: #06002A;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.education .education-title {
+    display: flex;
+    width : 100vw; 
+    align-items: center;
+    justify-content: center;
+}
+
+.education h3 span {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #ff0000;
+}
+
+
+/* partie slider / écoles */
+.card {
+    width : 80vw; 
+    display: flex;
+    flex-direction: column;
+    padding : 2rem 3rem 2rem 3rem; 
+    align-items: center;
+    justify-content: space-between;
+    gap : 2rem; 
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 16px;
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    font-size: 3rem;
+
+}
+
+.card span {
+    font-size: 3rem;
+}
+
+.card .iutRodez {
+    display: flex;
+    flex-direction: row;
+    gap : 2rem; 
+    width: 70vw;
+    border-radius: 20px;
+    padding : 2rem;
+    border: 2px white solid;
+    text-align: justify;
+}   
+
+.card .iutRodez img {
+    width : 60%; 
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+.card .iutRodez span {
+    font-size: 1.8rem;
+}
+
+.card:hover{
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.508);
+
+}
+
+.card a {
+    color : white; 
+}
+
+.card a:hover {
+    transform: scale(1.1);
+}
+.card a:visited {
+    color : yellow;  
+}
+
+@media (max-width: 768px){
+
+    .card {
+        text-align: center;
+    }
+    .card .iutRodez {
+        flex-direction: column;
+        align-items: center;
+        padding : 0.8rem;
+        text-align: left;
+    }
+
+    .card .iutRodez img {
+        width: 100%;
+    }
+}
